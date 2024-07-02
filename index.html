@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Mygoals</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-box">
+            <div class="intro">
+                <div class="intro-img">
+                    <img id="profile-pic" src="img/clari.jpg" alt="profile-pic" 
+                   >
+                </div>
+                  <div class="intro-cont">
+                    <p id="hello">Hello, i am</p>
+                    <p id="name" data-testid="9">Clara-M</p>
+                    <p id="title">Junior web Developer</p>
+                    <p id="day">Tuesday</p><span id="time">22:14pm</span>
+                    <p id="email">clarismukhwana1@gmail.com</p>
+                  </div>
+            </div>
+        </div>
+        
+           <div class="goals-text">
+                <h1>My Goals in Tech for the next two years</h1> 
+                <p>Setting goals is a vital step into success.It gives you a sense of purpose in your life,and motivation.</p>
+                <p>One ought to act  on their plan and find the right programs to help them.Some of the invaluable programs include: </p>
+                <ul>
+                    <a id="tech" href="https://hng.tech/learn"><li class="links">HNG learn program
+                    </li>
+                    </a>
+                    <a id="keyword" href="https://keyword.dog">
+                        <li class="links">keyword.dog</li>
+                    </a>
+                    <a id="scrape" href="https://scrapeanyweb.site">
+                        <li class="links">scrapeanyweb.site</li>
+                    </a>
+                </ul>
+            </div>
+
+        <div class="goals-box">
+            
+            <div class="mygoals">
+                
+                <div class="goals">
+                    <h4 class="goal-title">Goal1</h4>
+                    <div class="goal-img">
+                       <img  class="g-image" src="img/comm.jpg" alt="Learner">
+                    </div>
+                    <div class="goal-cont">
+                       <h4>IMPROVE ON MY SOFT SKILLS</h4>
+                       <p>Enroll on online courses in public speaking and working in a team.</p>
+                     </div>
+                </div>
+                <div class="goals">
+                    <h4 class="goal-title">Goal2</h4>
+                    <div class="goal-img">  
+                     <img class="g-image" src="img/img-03.jpg" alt="">
+                    </div>
+                        <div class="goal-cont">
+                           <H4>INCREASE MY PROFFESIONAL NETWORK</H4>
+                           <p>Attend  bootcamps,internship programs like HNG and make more friends.</p>
+                        </div>
+    
+                </div>
+                <div class="goals  goal-last">
+                    <h4 class="goal-title">Goal3</h4>
+                    <div class="goal-img">
+                      <img class="g-image" src="img/react.png" alt="" >
+                    </div>
+                        <div class="goal-cont">
+                           <h4>BECOME AN EXPERT IN FRONTEND DEVELOPMENT</h4>
+                            <p>Be able to build outstandig projects in React js and React Native.</p>
+                           
+                        </div>
+    
+                </div>
+            </div> 
+              
+           
+        </div>
+        <div class="goals-box">
+            <div class="mygoals">
+                <div class="goals">
+                    <h4 class="goal-title">Goal4</h4>
+                    <div class="goal-img">
+                       <img class="g-image" src="img/p2.jpg" alt="" >
+                    </div>
+                         <div class="goal-cont">
+                         <h4>GET CERTIFIED IN REACT</h4> <p>Get a React developer Proffesional certificate.</p>
+                         </div>
+    
+                </div>
+                <div class="goals">
+                    <h4 class="goal-title">Goal5</h4>
+                    <div class="goal-img">
+                       <img class="g-image" src="img/git.png" alt="">
+                    </div>
+                         <div class="goal-cont">
+                         <h4>LEARN GIT</h4> <p>Learn git and be able to colaborate with other developers on projects.</p>
+                         </div>
+    
+                </div>
+                <div class="goals goal-last">
+                    <h4 class="goal-title">Goal6</h4>
+                    <div class="goal-img">
+                       <img class="g-image" src="img/p3.jpg" alt="" >
+                    </div>
+                         <div class="goal-cont">
+                         <h4>DIVE INTO BACKEND DEVELOPMENT</h4><p>Learn backend languages like python ,C#,and PHP.</p> 
+                         </div>
+    
+                </div>
+
+            </div> 
+        </div>
+        
+    </div>
+    <script>
+        document.getElementsById('profile-pic').setAttribute('data-testid',8);
+        document.getElementById('name').setAttribute('data-testid',9);
+        document.getElementById('day').setAttribute('data-testid',10);
+        document.getElementById('time').setAttribute('data-testid',11);
+        document.getElementById('tech').setAttribute('data-testid',12);
+        document.getElementById('keyword').setAttribute('data-testid',13);
+        document.getElementById('scrape').setAttribute('data-testid',);
+        console.log(document.getElementsById('profile-pic').getAttribute('data-testid'));
+
+    console.log(document.getElementById('name').getAttribute('data-testid'));
+
+    </script>
+</body>
+</html>

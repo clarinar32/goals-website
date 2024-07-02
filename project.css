@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    color: #525151;
+
+}
+h1{
+    font-size: bolder;
+}
+p{
+    color:#525151;
+}
+.container{
+    margin: 0;
+
+    /* background-color: #f9f9ff; */
+    width: 100%;
+    height:max-content;
+}
+.intro-box{
+    background:-moz-linear-gradient(to right, #c45f90,#d3427f) ;
+    position: relative;
+    width:100%;
+    height: 400px;
+}
+.intro{
+   position: absolute;
+   width: 60%;
+   background-color: #ffff;
+   height: 350px;
+   display: flex;
+   margin-left: 20%;
+   margin-right: 8%;
+   justify-content: space-between;
+   flex-direction: row;
+}
+.intro-img{
+    width: 300px;
+    height: 300px;
+    
+ } 
+ .intro-img> img{
+    width: 100%;
+ }
+
+.intro-cont{
+    line-height: 1.15;
+    width: 60%;
+    padding: 0;
+}
+.intro-cont >p{
+    font-size: 18px;
+}
+#hello{
+    line-height: 0;
+}
+#name{
+  font-size: 40px;
+  font-weight: bold;
+}
+#title{
+    color: black;
+    
+}
+.goals-box{
+    width: 100%;
+    background: -moz-linear-gradient(#c45f90 ,rgb(196, 87, 131));
+    height: 400px;
+    position: relative;
+    margin-bottom: 5%;
+}
+.goals-text{
+    margin-top: 3%;
+    width: 100%;
+    height: 300px;
+    line-height: 2;
+   text-align: center;
+}
+.goals-text >p{
+    font-size: 18;
+}
+.links{
+    color: #c45f90;
+    list-style-type: none;
+    
+
+}
+.links:hover{
+    color: #525151;
+}
+.mygoals{
+    margin-top: 5%;
+    margin-left: 5%;
+   position: absolute;
+   width: 95%;
+   height: 350px;
+   display: grid;
+   background-color:#ffff;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 50px;
+   
+}
+
+
+.goals{
+    box-shadow: 0 4px 6px 0 rgba(25, 5, 202, 0.16);
+	transition: all ease-in-out .2s;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+   
+}
+.goals:hover{
+    filter: brightness(.75);
+box-shadow:0 8px 12px 0 rgba(13, 13, 14, 0.16);
+}
+.goals:hover > h4{
+    visibility: visible;
+  }
+
+.goal-title{
+   position: absolute;
+   top: 20%;
+   left: 30%;
+   color: #ffff;
+   transform: translate(-20% -30%);
+   z-index: 2;
+   visibility: hidden;
+   transition: all ease-in-out .2s;
+}
+.goal-img{
+    width: 320px;
+    height: 150px;
+}
+.g-image{
+    width: 100%;
+}
+
+/*media queries*/
+@media (max-width:480px) {
+
+.intro-box{
+position: relative;
+max-width: 480px;
+height: 550px;            
+ }
+ .intro{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 5%;
+    width: 100%;
+}
+.intro-img{
+    width: 300px;
+    height: 300px;
+    
+ } 
+ .intro-img> img{
+    width: 100%;
+ }
+
+ .intro-cont{
+    margin-top: 0;
+    line-height: 1;
+    width: 100%;
+    padding: 0;
+}
+.intro-cont >p{
+    font-size: 16px;
+}
+
+#name{
+  font-size: 18px;
+}
+.goals-text{
+margin-top: 5%;
+height: 420px;
+}
+.goals-text >h1{
+    font-size: 18px;
+}
+.goals-box{
+    height: 900px;
+}
+.mygoals{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.goals{
+    height: 300px;
+    width: 100%;
+}
+.goal-img{
+    width: 280px;
+    height: 150px;
+}
+.g-image{
+    width: 100%;
+}
+}
+/*ipads*/
+@media (max-width:768px) {
+    .intro-box{
+        position: relative;
+        max-width: 480px;
+        height: 550px;            
+         }
+         .intro{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            margin-left: 5%;
+            width: 100%;
+        }
+        
+        
+         .intro-cont{
+            margin-top: 0;
+            line-height: 1;
+            width: 100%;
+            padding: 0;
+        }
+        .intro-cont >p{
+            font-size: 16px;
+        }
+        
+        #name{
+          font-size: 18px;
+        }
+        .goals-text{
+        margin-top: 5%;
+        height: 420px;
+        }
+        .goals-text >h1{
+            font-size: 18px;
+        }
+        .goals-box{
+            height: 900px;
+        }
+        .mygoals{
+            height: 900px;
+            width: 80%;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+        .goals{
+            height: 300px;
+            width: 100%;
+        }
+             
+        
+    }
+/*laptops*/    
+@media (max-width:1024px) {
+.intro{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}        
+.goals-text{
+    height:350px;
+}
+.goals-box{
+    height: 900px;
+}
+.mygoals{
+    height: 900px;
+    width: 650px;
+    margin-left: 8%;
+    grid-row-gap: 3%;
+    grid-template-columns:100% ;
+    grid-template-rows: 30% 30% 30%;
+} 
+.goals{
+    width: 600px;
+}
+
+
+   
+    }
+/*desktops*/
+@media (max-width:1200px) {
+.mygoals{
+    grid-column-gap: 15px;
+
+} 
+.goal-img{
+    width: 280px;
+    height: 150px;    
+}
+.g-image{
+    width: 100%;
+}       
+        
+    }
+   
