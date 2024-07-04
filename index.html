@@ -11,15 +11,15 @@
         <div class="intro-box">
             <div class="intro">
                 <div class="intro-img">
-                    <img id="profile-pic" src="img/clari.jpg" alt="profile-pic" 
+                    <img data-testid="slackProfilePicture" src="img/clari.jpg" alt="profile-pic" 
                    >
                 </div>
                   <div class="intro-cont">
                     <p id="hello">Hello, i am</p>
-                    <p id="name" data-testid="9">Clara-M</p>
+                    <p id="name" data-testid="slackDiaplsyName">Clara-M</p>
                     <p id="title">Junior web Developer</p>
-                    <p id="day">Tuesday</p><span id="time">22:14pm</span>
-                    <p id="email">clarismukhwana1@gmail.com</p>
+                    <p id="day" data-testid="currentTimeUTC">Tuesday</p><span id="time">22:14pm</span>
+                    <p data-testid="slackEmail">clarismukhwana1@gmail.com</p>
                   </div>
             </div>
         </div>
@@ -29,13 +29,13 @@
                 <p>Setting goals is a vital step into success.It gives you a sense of purpose in your life,and motivation.</p>
                 <p>One ought to act  on their plan and find the right programs to help them.Some of the invaluable programs include: </p>
                 <ul>
-                    <a id="tech" href="https://hng.tech/learn"><li class="links">HNG learn program
+                    <a data-testid="hngLink" href="https://hng.tech/learn"><li class="links">HNG learn program
                     </li>
                     </a>
-                    <a id="keyword" href="https://keyword.dog">
+                    <a data-testid="keywordLink" href="https://keyword.dog">
                         <li class="links">keyword.dog</li>
                     </a>
-                    <a id="scrape" href="https://scrapeanyweb.site">
+                    <a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site">
                         <li class="links">scrapeanyweb.site</li>
                     </a>
                 </ul>
@@ -119,18 +119,6 @@
         </div>
         
     </div>
-    <script>
-        document.getElementsById('profile-pic').setAttribute('data-testid',8);
-        document.getElementById('name').setAttribute('data-testid',9);
-        document.getElementById('day').setAttribute('data-testid',10);
-        document.getElementById('time').setAttribute('data-testid',11);
-        document.getElementById('tech').setAttribute('data-testid',12);
-        document.getElementById('keyword').setAttribute('data-testid',13);
-        document.getElementById('scrape').setAttribute('data-testid',);
-        console.log(document.getElementsById('profile-pic').getAttribute('data-testid'));
-
-    console.log(document.getElementById('name').getAttribute('data-testid'));
-
-    </script>
+   
 </body>
 </html>
